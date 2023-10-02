@@ -36,22 +36,22 @@ public class Pakli {
             kiIr();
             kever(melyik());
         }
-        System.out.println("ez volt: "+ezVolt());
+        System.out.println("ez volt: " + ezVolt());
     }
 
     private int melyik() {
         System.out.print("Válasz oszlopot: ");
         int szam = sc.nextInt();
         while (szam > 3 || szam < 1) {
-            System.out.println("Nem jó!");
+            System.out.print("Nem jó! Egytől háromig adj meg egy számot: ");
             szam = sc.nextInt();
         }
         return szam;
     }
 
     private void kever(int melyik) {
-        Lap[] tmp= new Lap[22];
-        
+        Lap[] tmp = new Lap[22];
+
         switch (melyik) {
             case 1:
                 for (int ix = 1; ix <= 7; ix++) {
@@ -77,8 +77,8 @@ public class Pakli {
             default:
                 throw new AssertionError();
         }
-        
-        lapok=tmp;
+
+        lapok = tmp;
     }
 
     private Lap ezVolt() {
