@@ -11,4 +11,9 @@ public class Lap {
     public String getLap(){
         return ertek;
     }
+
+    @Override
+    public String toString() {
+        return ertek;
+    }
 }
