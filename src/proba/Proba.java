@@ -3,7 +3,7 @@ package proba;
 public class Proba {
 
     public static void main(String[] args) {
-
+        new Pakli();
     }
     
 }
